@@ -69,7 +69,7 @@
 	var welcome = {
 			type: 'instructions',
 			pages: [
-					"<p class='center-content'> <h2> Tere tulemast lahendama puuvilja &uumllesannet!</b></h2> Terve puuvilja &uumllesande lahendamine v&#245tab aega 8 minutit. <p><li>Palun &aumlra kasuta &uumllesande lahendamisel Windows Internet Explorerit, see ei pruugi vastuseid salvestada. <li>Palun ole ettevaatlik, et Sa kogemata ei vajutaks Escape-nuppu, mis l&#245petaks &uumllesande ilma andmeid salvestamata.<p>Edasiste juhiste saamiseks kl&#245psa nuppu J&aumltka."],
+					"<p class='center-content'> <h2> Სალამი! Ეს ხილის ამოცანაა!</b></h2> Ამ ამოცანის ამოსახსნელად მხოლოდ 8 წუთი დაგჭირდებათ. <p><li>Გთხოვთ, არ გამოიყენოთ Windows Internet Explorer-ი, შესაძლოა პასუხები წაიშალოს. <li>Გთხოვთ, შემთხვევით არ დააწკაპუნოთ Escape ღილაკზე, ეს დავალებას პასუხების გარეშე შეინახავს.<p>დააწკაპუნეთ “გაგრძელება”-ზე შემდგომი ინსტრუქციების მისაღებად."],
 			show_clickable_nav: true,
 			
 			};
@@ -94,11 +94,11 @@
 		required: [true]
     };*/
 
-	var persData_code = ["<p> Loo oma anon&#252&#252mne isiklik kood:"];
+	var persData_code = ["<p> Შექმენით თქვენი ანონიმური პერსონალური კოდი:"];
 	var demographics = {
 	  		type: "survey-text-persCode",
 	  		questions: persData_code,
-			preamble: "<b>Juhised isikliku koodi loomiseks</b>: <br> Esimene s&#252mbol: Sinu eesnime teine t&aumlht (nt M<b>a</b>rta)<br>Teine s&#252mbol: Sinu perekonnanime kolmas t&aumlht (nt Me<b>t</b>s) <br> Sinu telefoninumbri kaks viimast numbrit (nt 5376<b>92</b>) <p> N&#228ide t&#228ielikust isiklikust koodist: <b>at92</b>",
+			preamble: "<b>Ინსტრუქციები პერსონალური კოდის შესაქმნელად</b>: <br> Პირველი სიმბოლო: თქვენი სახელის მეორე ასო (მაგ., ლ<b>ე</b>ილა)<br>Მეორე სიმბოლო:თქვენი გვარის მესამე ასო (მაგ., ნუ<b>რ</b>იევა) <br> Თქვენი ტელეფონის ნომრის ბოლო ორი ციფრი (მაგ., 5376<b>92</b>) <p> Პერსონალური კოდის ნიმუში: <b>ერ92</b>",
 			on_finish: function(data) { 
 		 		code_length = data.code_length;
 		 		if(code_length!=4){alert("Palun sisesta kuuekohaline isiklik kood.")}
@@ -117,7 +117,7 @@
 ///////// Page 1
 	var Instruction_Page1 = {
 		type: 'instructions',
-		pages: ["Puuvilja &#252lesanne koosneb j&#228rgmisest <b>neljast alam&#252lesandest</b>: <p> <b>(a)</b> Geomeetriliste kujundite v&#228rvide nimetamine (st vastavat v&#228rvi nuppudele vajutamine). N&#228iteks alltoodud n&#228ites 'roheline'. <br><img src='jspsych-5.0.3-fruit/Shapes/pentagon_green.png' width='80px'> <p><b>(b)</b> Puuvilja piltide v&#228rvide nimetamine (alltoodud n&#228ites 'punane'). <br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_red.png' width='100px'><p><b>(c)</b> Must-valgelt kujutatud puuviljade piltidel 't&#245eliste' v&#228rvide nimetamine (alltoodud n&#228ites 'punane').<br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_transparent.png' width='100px'> <p><b>(d)</b> Vale v&#228rviga kujutatud puuviljade piltidel 't&#245eliste' v&#228rvide nimetamine (alltoodud n&#228ites 'punane').<br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_blue.png' width='100px'> <p> <b>P&#252&#252a t&#228ita iga &#252lesanne v&#245imalikult kiiresti ja t&#228pselt. </b><p>Pane t&#228hele, et igale &#252lesandele eelneb l&#252hike harjutuskatse, mis tuleb sooritada nii, et annad j&#228rjest "+practice_criterion+" &#245iget vastust. <p>***</p>Esimese alam&#252lesande harjutamise alustamiseks kl&#245psa nuppu <i>J&#228tka</i>."],
+		pages: ["Ხილის ამოცანა მოიცავს  შემდეგ <b>ოთხ დავალებას</b>: <p> <b>(ა)</b> გეომეტრიული ფიგურების ფერების დასახელება (ანუ აჭერთ შესაბამისი ფერის ღილაკზე). Მაგალითად, “მწვანე” ქვემოთ მოცემული ფიგურისთვის.  <br><img src='jspsych-5.0.3-fruit/Shapes/pentagon_green.png' width='80px'> <p><b>(ბ)</b> ხილის სურათების ფერების მითითება (“წითელი” ქვემოთ მოცემულ მაგალითში). <br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_red.png' width='100px'><p><b>(გ)</b>  “ნამდვილი” ფერების მითითება ხილის შავ-თეთრი სურათებისთვის (“წითელი” ქვემოთ მოცემულ მაგალითში).<br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_transparent.png' width='100px'> <p><b>(დ)</b> “ნამდვილი” ფერების მითითება ხილის მცდარ ფერებში ასახული სურათებისთვის (“წითელი” ქვემოთ მოცემულ მაგალითში).<br><img src='jspsych-5.0.3-fruit/Fruits/strawberry_blue.png' width='100px'> <p> <b>P&#252&#252a Ეცადეთ დავალება რაც შეიძლება სწრაფად და ზუსტად შეასრულოთ.  </b><p>Თითოეულ მათგანს წინ უძღვის პატარა სავარჯიშო ტესტი რომელშიც ზედიზედ  "+practice_criterion+" სწორი პასუხი უნდა მიუთითოთ. <p>***</p>Პირველი დავალების სავარჯიშო ტესტს დასაწყებად Დააწკაპუნეთ <i>გაგრძელება-ზე</i>."],
 		show_clickable_nav: true,
 		on_finish: function(data){
 				i = 0;	
@@ -146,7 +146,7 @@
 	var Page1 = {
 		    type: 'BRFruit',
 			is_html: false, 
-			prompt: "Mis v&#228rvi see kujund on?<p>",
+			prompt: "Რა ფერია ეს ფიგურა?<p>",
 
 			stimulus: function(){
 					return geoShapes[i_shape][i_color]
@@ -198,8 +198,8 @@
 	var Feedback_Page1 = {
 		type: 'instructions',
 		pages: function(){if(item_completed==true){
-			feedback_text = "<p>***</p> <span style='color:green'>&#213ige vastus!</span><br>J&#228rjest antud &#245igeid vastuseid: <b>"+nC_inarow +"</b> (kokku <b>"+practice_criterion+"</b> &#252lesannet).<p>***</p>J&#228tkamiseks kl&#245psa nuppu <i>J&#228tka</i>."}else{
-				feedback_text="<p>***</p> <span style='color:red'>Vale vastus!</span> Nupu v&#228rv peab vastama kujutise v&#228rvile. Proovi uuesti!<br>J&#228rjest antud &#245igeid vastuseid: <b>"+nC_inarow +"</b> (kokku <b>"+practice_criterion+"</b> &#252lesannet).<p>***</p>J&#228tkamiseks kl&#245psa nuppu <i>J&#228tka</i>."
+			feedback_text = "<p>***</p> <span style='color:green'>სწორი პასუხია!</span><br>Თანმიმდევრულად მოცემული სწორი პასუხების რაოდენობა: <b>"+nC_inarow +"</b> (ჯამში <b>"+practice_criterion+"</b> დავალებაა).<p>***</p>დააწკაპუნეთ <i>გაგრძელება-ზე</i>."}else{
+				feedback_text="<p>***</p> <span style='color:red'>Არასწორი პასუხია!</span> ღილაკის ფერი სურათის ფერს უნდა ემთხვეოდეს. Კიდევ ერთხელ სცადეთ!<br>Მოცემული სწორი პასუხები: <b>"+nC_inarow +"</b> (ჯამში <b>"+practice_criterion+"</b> დავალება).<p>***</p>დააწკაპუნეთ <i>გაგრძელება-ზე</i>."
 			}
 		 return[feedback_text]},
 		show_clickable_nav: true,
@@ -232,7 +232,7 @@
 	}
 	var Filler_Page1 = {
 		type: 'instructions',
-		pages: ["<p>***</p> <b>H&#228sti tehtud!</b> <br>Oled n&#252&#252d valmis lahendama <b>1</b>. alam&#252lesannet (kokku <b>4</b> &#252lesannet). <p>Kujutised esitatakse nii, nagu just harjutasid. Samamoodi nagu varem, ilmub uus kujutis ainult siis, kui Su viimane vastus oli &#245ige. Vastupidiselt harjutuskatsetele ei saa Sa aga tagasisidet selle kohta, kas Su vastus on &#245ige v&#245i mitte. <b><br>&#220lesande tegemiseks kulub "+(time_limit/1000)+" sekundit ja Sinu eesm&#228rk peaks olema v&#245imalikult paljude kujutiste &#252lesannete t&#228itmine!</b></p><p>***</p>Alustamiseks kl&#245psa nuppu <i>J&#228tka</i>."],
+		pages: ["<p>***</p> <b>ყოჩაღ!</b> <br>Ახლა კი მზად ხარ შეასრულო <b>1</b>. დავალება (ჯამში <b>4</b> დავალებაა). <p>Სურათები ისევეა წარმოდგენილი როგორც სავარჯიშო ტესტში იყო. Ახალი სურათი მაშინ გამოჩნდება, თუ წინა პასუხი სწორი იყო. Თუმცა ეკრანზე აღარ იქნება მითითებული, სწორია თუ არა გაცემული პასუხი. <b><br>ამოცანი შესრულებას "+(time_limit/1000)+" წამი სჭირდება და თქვენი მიზანია რაც შეიძლება მეტ დავალებას უპასუხოთ!</b></p><p>***</p>Დასაწყებად Დააწკაპუნეთ <i>გაგრძელება-ზე</i>."],
 		show_clickable_nav: true,
 		on_finish: function(data){
 				practice = false;
@@ -286,7 +286,7 @@
 				if(RTs_Page1_wrong.length==0){mean_RTs_wrong="Valed vastused puuduvad"}else{
 					mean_RTs_wrong = Math.round((averageFx(RTs_Page1_wrong)/1000)*100)/100; 
 				}
-				return["Tehtud &#252lesannete arv: <b>"+nCompleted_Page1+"</b><br>Vigade arv: <b>"+nErrors_Page1+"</b><br>Keskmine vastamise aeg (sekundites): <b>"+mean_RTs+"</b><br>Vastamise aeg (&#245iged katsed): <b>"+mean_RTs_right_P1+" </b><br>Vastamise aeg (valed katsed): <b>"+mean_RTs_wrong+" "]},
+				return["Შესრულებული დავალებების რაოდენობა <b>"+nCompleted_Page1+"</b><br>Შეცდომების რაოდენობა:<b>"+nErrors_Page1+"</b><br>Პასუხის საშუალო დრო(წამი): <b>"+mean_RTs+"</b><br>Პასუხის დრო(სწორი მცდელობები): <b>"+mean_RTs_right_P1+" </b><br>Პასუხის დრო(არასწორი მცდელობები):  <b>"+mean_RTs_wrong+" "]},
 		show_clickable_nav: true,
 		data: function(){
 				return{nCompleted_Page1: nCompleted_Page1, nErrors_Page1: nErrors_Page1, RTs: RTs_Page1}
@@ -298,7 +298,7 @@
 
 	var Instruction_Page2 = {
 		type: 'instructions',
-		pages: ["<p>***</p> <b> Tubli!</b> <p>Enne <b>teise</b> alam&#252lesande (kokku <b>neli</b>) t&#228itmist pead uuesti tegema l&#252hikese harjutuskatse, mis kestab niikaua, kuni saad "+practice_criterion+" &#245iget vastust j&#228rjest. <p>***</p>Harjutamise alustamiseks kl&#245psa <i>J&#228tka</i>."],
+		pages: ["<p>***</p> <b> კარგია!</b> <p>სანამ <b>მეორე</b> დავალებას შეასრულებთ(ჯამში <b>ოთხია</b>) იდევ ერთ სავარჯიშო ტესტში ზედიზედ "+practice_criterion+" სწორი პასუხი უნდა გასცეთ. <p>***</p>ტესტის დასაწყებად დააწკაპუნეთ <i>გაგრძელება-ს</i>."],
 		show_clickable_nav: true,
 		on_finish: function(data){
 				practice=true;
@@ -323,7 +323,7 @@
 	var Page2 = {
 		    type: 'BRFruit',
 			is_html: false, 
-			prompt: "Mis v&#228rvi see puuvili on? <p>",
+			prompt: "რა ფერია ხილი? <p>",
 			stimulus: function(){
 					return congruentFruits[0][i_color]
 			},
@@ -368,8 +368,8 @@
 	var Feedback_Page2 = {
 		type: 'instructions',
 		pages: function(){if(item_completed==true){
-			feedback_text = "<p>***</p> <span style='color:green'>&#213ige vastus!</span><br> J&#228rjest antud &#245igeid vastuseid: <b>"+nC_inarow +"</b> (kokku <b>"+practice_criterion+"</b> &#252lesannet).<p>***</p>J&#228tkamiseks kl&#245psa nuppu <i>J&#228tka</i>."}else{
-				feedback_text="<p>***</p> <span style='color:red'>Vale vastus!</span> Nupu v&#228rv peab vastama puuvilja v&#228rvile. Proovi uuesti!<br> J&#228rjest antud &#245igeid vastuseid: <b>"+nC_inarow +"</b> (kokku <b>"+practice_criterion+"</b> &#252lesannet).<p>***</p>J&#228tkamiseks kl&#245psa nuppu <i>J&#228tka</i>."
+			feedback_text = "<p>***</p> <span style='color:green'>სწორი პასუხია!</span><br> Თანმიმდევრულად მოცემული სწორი პასუხების რაოდენობა: <b>"+nC_inarow +"</b> (ჯამში <b>"+practice_criterion+"</b> დავალებაა).<p>***</p>დააწკაპუნეთ <i>გაგრძელება-ზე</i>."}else{
+				feedback_text="<p>***</p> <span style='color:red'>არასწორი პასუხია!</span> Ღილაკის ფერი ხილის ფერს უნდა ემთხვეოდეს. Კიდევ ერთხელ სცადეთ!<br> მოცემული სწორი პასუხები: <b>"+nC_inarow +"</b> (ჯამში <b>"+practice_criterion+"</b> დავალებაა).<p>***</p>დააწკაპუნეთ <i>გაგრძელება-ზე</i>."
 			}
 		 return[feedback_text]},
 		show_clickable_nav: true,
@@ -402,7 +402,7 @@
 	}
 	var Filler_Page2 = {
 		type: 'instructions',
-		pages: ["<p>***</p> <b>V&#228ga hea!</b> <p>Tee n&#252&#252d <b>2</b>. alam&#252lesanne (kokku <b>4</b>). <b><br>T&#228ida "+(time_limit/1000)+" sekundi jooksul v&#245imalikult palju puuvilja &#252lesandeid!</b></p><p>***</p>Alustamiseks kl&#245psa nuppu <i>J&#228tka</i>."],
+		pages: ["<p>***</p> <b>ძალიან კარგი!</b> <p>ახლა დროა შეასრულოთ დავალება <b>2</b>. (ჯამშია <b>4</b>). <b><br>შეასრულეთ "+(time_limit/1000)+" წამში რაც შეიძლება მეტი ხილის ამოცანა!</b></p><p>***</p>ტესტის დასაწყებად დააწკაპუნეთ <i>გაგრძელება-ს</i>."],
 		show_clickable_nav: true,
 		on_finish: function(data){
 				practice=false;
@@ -449,13 +449,13 @@
 		type: 'instructions',
 		pages: function(){
 				mean_RTs = Math.round((averageFx(RTs_Page2)/1000)*100)/100; nCompleted_Page2 = nCompleted_Page2;
-				if(RTs_Page2_correct.length==0){mean_RTs_right="&#213iged vastused puuduvad"}else{
+				if(RTs_Page2_correct.length==0){mean_RTs_right="სწორი პასუხები არ არის"}else{
 					mean_RTs_right_P2 = Math.round((averageFx(RTs_Page2_correct)/1000)*100)/100; 
 				}
-				if(RTs_Page2_wrong.length==0){mean_RTs_wrong="Valed vastused puuduvad"}else{
+				if(RTs_Page2_wrong.length==0){mean_RTs_wrong="არასწორი პასუხები არ არის"}else{
 					mean_RTs_wrong = Math.round((averageFx(RTs_Page2_wrong)/1000)*100)/100; 
 				}
-				return["Tehtud &#252lesannete arv: <b>"+nCompleted_Page2+"</b><br>Vigade arv: <b>"+nErrors_Page2+"</b><br>Keskmine vastamise aeg (sekundites): <b>"+mean_RTs+"</b><br>Vastamise aeg (&#245iged katsed): <b>"+mean_RTs_right_P2+" </b><br>Vastamise aeg (valed katsed): <b>"+mean_RTs_wrong+" "]},
+				return["შესრულებული დავალებები: <b>"+nCompleted_Page2+"</b><br>შეცდომების რაოდენობა: <b>"+nErrors_Page2+"</b><br>საშუალო პასუხის დრო(წამი): <b>"+mean_RTs+"</b><br>პასუხის დრო(სწორი მცდელობები): <b>"+mean_RTs_right_P2+" </b><br>პასუხის დრო(არასწორი მცდელობები): <b>"+mean_RTs_wrong+" "]},
 		show_clickable_nav: true,
 		data: function(){
 				return{nCompleted_Page2: nCompleted_Page2, nErrors_Page2: nErrors_Page2, RTs: RTs_Page2}
@@ -467,7 +467,7 @@
 
 	var Instruction_Page3 = {
 		type: 'instructions',
-		pages: ["<p>***</p> <b>Tubli t&#246&#246!</b> <p> Oled j&#245udnud juba <b>kolmanda</b> alam&#252lesandeni (kokku <b>neli</b> alam&#252lesannet). N&#252&#252d kuvatakse samad puuviljad (banaan, pirn, maasikas, viinamarjad) must-valgelt ja Sinu &#252lesandeks on valida &#245ige v&#228rv, st banaani jaoks valid kollase, pirni jaoks rohelise, maasika jaoks punase ja viinamarjade jaoks sinise v&#228rvi. <p>***</p>Harjutamise alustamiseks kl&#245psa <i>J&#228tka</i>."],
+		pages: ["<p>***</p> <b>ყოჩაღ!</b> <p> უკვე <b>მესამე</b> დავალებაზე ხართ (ჯამში <b>ოთხი</b> დავალებაა). Ახლა იგივე ხილი (ბანანი, მსხალი, მარწყვი, ყურძენი) შავ-თეთრ ფერებში იქნება წარმოდგენილი და თქვენი ამოცანაა სწორი ფერი ამოარჩიოთ ვარიანტებიდან ანუ ირჩევთ ყვითელს ბანანისთვის, მწვანეს მსხლისთვის, წითელს მარწყვისთვის და ლურჯს ყურძნისთვის. <p>***</p>ტესტის დასაწყებად დააწკაპუნეთ <i>გაგრძელება-ს</i>."],
 		show_clickable_nav: true,
 		on_finish: function(data){
 				i = 0;	
